@@ -13,4 +13,4 @@ class Pet:
         #the above attributes are prefixed with an underscore to indicate
         #that they cannot be accessed from outside the class
         #this is making them hem 'private'
-        #meaing you need to use a method to access them, encapsulating them
+        #meaning you need to use a method to access them, encapsulating them  
