@@ -2,16 +2,19 @@ class Pet:
     #constructor
     def __init__(self, petName, petType):
         #setting attributes with an initial value
-        self.__petName = petName
-        self.__petType = petType
-        self.__bored = 0
-        self.__hunger = 0
-        self.__intelligence = 0
+        self.petName = petName
+        self.petType = petType
+        self.bored = 0
+        self.hunger = 0
+        self.intelligence = 0
     
-    def showhunger():
-        return(self.__hunger)
+    def showHunger():
+        print(self.hunger)
+    
+    def outputGreeting():
+        print("hello, i am", self.petName, "i'm a", self.petType)
 
 
-NewPet = Pet("springy", "Tiger")
-
-springy.showhunger()
+newPet = Pet("springy", "tiger")
+newPet.showHunger()
+newPet.outputGreeting()
