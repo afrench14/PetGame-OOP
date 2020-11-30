@@ -7,6 +7,7 @@ class Pet:
         self.bored = 0
         self.hunger = 50
         self.intelligence = 50
+        self.alive = True
 
     def showHunger(self, hunger):
         if self.hunger == 100:
@@ -21,14 +22,20 @@ class Pet:
             print(self.petName, "has", self.hunger, "hunger points remaining and is extremely hungry, feed asap")
         elif 0 < self.hunger < 10:
             print(self.petName, "has", self.hunger, "hunger points remaining and will soon starve, feed immediately")
-        #include 'dead' here
+        elif self.hunger == 0:
+            print("unfortunately,", self.petName + "'s hunger has reached zero, so", self.petName, "has died")
+            self.alive = False
         else:
             print("error returning", self.petName + "'s hunger, sorry :(")
+
+    #def showBored(self, bored):
 
     def outputGreeting(self, petName):
         print("hello, i am", self.petName, "and i'm a", self.petType)
 
 
-newPet = Pet("springy", "tiger")
-newPet.showHunger(newPet.hunger)
-newPet.outputGreeting(newPet.petName)
+listOfPets = []
+
+pet1 = Pet("springy", "tiger")
+pet1.outputGreeting(pet1.petName)
+pet1.showHunger(pet1.hunger)
