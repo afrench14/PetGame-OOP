@@ -9,6 +9,7 @@ class Pet:
         self.intelligence = 50
         self.alive = True
 
+    #show hunger values
     def showHunger(self, hunger):
         if self.hunger == 100:
             print(self.petName, "has", self.hunger, "hunger points remaining and is full, good job")
