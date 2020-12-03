@@ -40,9 +40,3 @@ listOfPets = []
 pet1 = Pet("springy", "tiger")
 pet1.outputGreeting(pet1.petName)
 pet1.showHunger(pet1.hunger)
-
-
-
-#massive test here
-#trying to see if git has connected
-#how do i get it tp update darn
